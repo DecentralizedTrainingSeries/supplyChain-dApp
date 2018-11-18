@@ -57,9 +57,9 @@ The results of compilation should be placed into corresponding folders in contra
 	
 The server should be initialized in the root directory `(.)`:
 
-	```
+	
 	http-server ./
-	```
+	
 ---------------
 Custom deployment script
 ---------------
