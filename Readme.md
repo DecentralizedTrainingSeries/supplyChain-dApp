@@ -55,7 +55,8 @@ The results of compilation should be placed into corresponding folders in contra
 	npm install -g http-server
 	```
 	
-The server should be initialized in the root directory (.):
+The server should be initialized in the root directory `(.)`:
+
 	```
 	http-server ./
 	```
