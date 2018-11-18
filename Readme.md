@@ -1,7 +1,7 @@
 
-Decentralized Training Series 2018
+**Decentralized Training Series 2018**
 
-supplyChain: A simple supply chain blockchain dApp
+**supplyChain: A simple supply chain blockchain dApp**
 
 
 ---------------
@@ -37,22 +37,28 @@ The key (with limited number of requests) can be obtained. The key should be cop
 The Google Maps key is required to visualize the the path that a product has followed.
 
 - Solc compiler: The solc compiler is required to compile the contracts and extract the abi (contract/abi/<contract_abi>) in case of performed changes. Installation of the solc is performed as: 
-
-	npm install -g solc
 	
+	```
+	npm install -g solc
+	```	
 Compilation of contracts is performed as:
+	```
 	soljs --abi <contract_name>.sol
 	soljs --bin <contract_name>.sol
+	```
 	
 The results of compilation should be placed into corresponding folders in contracts folder. The default (preconmpiled) files are provided.
 
 - Simple Http server: The http server is required to serve the interface for testing. Installation of the simple http server is performed through npm:
 
+	```
 	npm install -g http-server
+	```
 	
 The server should be initialized in the root directory (.):
+	```
 	http-server ./
-
+	```
 ---------------
 Custom deployment script
 ---------------
@@ -61,14 +67,18 @@ In folder contracts there is a custom deployment script for deploying the Smart 
 
 Installation procedure of the required libraries is as follows:
 
+```
 pip3.6 install web3
 pip3.6 install py-solc
 
 python3.6 -m solc.install v0.4.24
+```
 
 And to run the script
 
+```
 python3.6 deploy.py
+```
 
 This script deploys the supplyChain contract and waits until this procedure is confirmed, it then returns the contract address.
 
